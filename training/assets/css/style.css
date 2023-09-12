@@ -1,0 +1,247 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(225, 225, 225, 1);
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+}
+
+p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+}
+
+li{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+}
+h4{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+}
+/* side bar */
+.sidebar{
+    width: 370px;
+    background-color: #1E2939;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.sidebar > .content {
+    margin-top: 50px;
+    margin-left: 40px;
+}
+.contacts p{
+    color: rgb(225, 225, 225, 1);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 8px 0px 0px 0px;
+}
+.contacts a{
+    color: rgb(225, 225, 225, 1);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+}
+.contacts h3{
+    margin: 0px 0px 8px 0px;
+
+}
+.contacts .phone-number{
+    text-decoration: none;
+    color: rgb(255, 255, 255, 0.5);
+}
+.sidebar > .tech-skills{
+    margin: 47px 0px 0px 0px ;
+}
+.tech-skills h3{
+    margin-top: 45px;
+    margin-bottom: 8px;
+}
+.tech-skills li{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.tech-skills ul{
+    list-style: none;
+    padding: 0px;
+}
+.tech-skills ul li::before{
+    content: "\2022";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FB6D3A;
+    width: 10px;
+    display: inline-block;
+}
+.soft-skills h3{
+    margin-top: 45px;
+    margin-bottom: 8px;
+}
+.soft-skills li{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.soft-skills ul{
+    list-style: none;
+    padding: 0px;
+}
+.soft-skills ul li::before{
+    content: "\2022";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FB6D3A;
+    width: 10px;
+    display: inline-block;
+}
+/* main content */
+.main-content{
+    width: calc(100% - 370px);
+    padding: 102px 217px 107px 88px;
+    background: #fff;
+}
+.summary > h4 {
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    color: #000;
+
+}
+.summary > h2 {
+    margin: 19px 0px 25px 0px;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 55px;
+    color: #000;
+
+}
+.summary > p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #595959;
+}
+.summary{
+    margin-bottom: 40px;
+}
+.work-experience .subtitle{
+    color: #FB6D3A;
+}
+.project{
+
+}
+.projects > h3{
+    margin: 0px;
+}
+.projects > ol{
+    margin: 8 0 1.5em;
+    padding: 0px;
+    counter-reset: none;
+}
+ol > li{
+    margin: 0;
+    padding: 0 0 0 2em;
+    text-indent: -2em;
+    list-style-type: none;
+    counter-increment: item;
+}
+ol > li::before{
+    width: 1em;
+    padding-right: 0.5em;
+    font-weight: 700;
+    font-size: 14px;
+    color: #000;
+    text-align: right;
+    content: counter(item) ".";
+}
+.projects a{ 
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #595959;
+}
+.projects > ol span {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+}
+.work-experience{
+    margin: 51px 0px 0px 0px;
+}
+.work-experience > h3{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color:#000;
+    margin: 0;
+}
+.work-experience > .experience{
+    margin: 12px 0px;
+}
+.work-experience > .experience > h4{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 20px 0px 12px 0px;
+}
+
+.work-experience > .experience > p{
+    margin: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #A8A8A8;
+}
+.work-experience > .experience > li{
+    color: #595959;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.work-experience > .experience > ul{
+    list-style: none;
+    padding-left: 0px;
+    margin: 8px 0px 0px 0px;
+}
+.work-experience > .experience > ul li::before{
+    content: "\2022";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+    width: 10px;
+    display: inline-block;
+}
+/* education */
+.education{
+    margin: 43px 0px 0px 0px;
+}
+.education h3{
+    margin: 12px 0px 0px 0px;
+}
+.education h4{
+    margin: 12px 0px 0px 0px;
+}
+.education p{
+    margin: 12px 0px 0px 0px;
+}
